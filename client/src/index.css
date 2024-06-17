@@ -50,9 +50,20 @@
     --ring: 224.3 76.3% 48%;
   }
 
-  .drop-shadow-lg {
-    --tw-drop-shadow: drop-shadow(0 10px 8px rgba(0, 0, 0, 0.7)) drop-shadow(0 4px 3px rgba(0, 0, 0, 0.7));
+  .custom-drop-shadow {
+    --tw-drop-shadow: drop-shadow(4px 4px 8px rgb(0 0 0 / 0.1));
   }
+
+  #grad {
+    @apply bg-gradient-to-r;
+    background-image: repeating-linear-gradient(135deg, rgb(30, 41, 59) 0px, rgb(30, 41, 59) 2px, rgb(51, 65, 85) 2px, rgb(51, 65, 85) 4px);
+  }
+
+  #grad:hover {
+    @apply bg-gradient-to-r;
+    background-image: repeating-linear-gradient(135deg, rgb(30, 41, 59) 0px, rgb(30, 41, 59) 2px, rgb(51, 65, 85) 2px, rgb(51, 65, 85) 2px);
+  }
+
 }
 
 

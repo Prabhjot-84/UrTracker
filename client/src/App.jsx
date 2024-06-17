@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
+import './index.css'
 import Layout from './components/shared/Layout'
 import Expense from './components/shared/Expense/Expense'
 import Home from './Home'
