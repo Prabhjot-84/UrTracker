@@ -8,7 +8,7 @@ import Security from '@/assets/security.png'
 import AddImg from '@/assets/add-img.jpg'
 import TableImg from '@/assets/table.jpg'
 
-import DonutImg from './assets/donut_chart.jpg'
+import DonutImg from '@/assets/donut_chart.jpg'
 import BarImg from '@/assets/bar.jpg'
 
 import StarImg from '@/assets/star.png'
