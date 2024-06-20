@@ -20,41 +20,41 @@ const Home = () => {
   return (
     <div className='w-full bg-[whitesmoke] h-screen overflow-y-auto'>
 
-        <div className='flex justify-evenly py-12 px-20 '>
+        <div className='flex justify-evenly py-12 px-5 lg:px-20 '>
 
           <div className='text-left w-2/4 py-4'>
-            <h1 className='text-slate-800 mb-7 text-5xl font-bold font-serif'> Take Control of Your Finances Today </h1>
-            <i className='text-2xl '> Track your income and expenses effortlessly and achieve your financial goals. </i>
+            <h1 className='text-slate-800 mb-4 md:mb-7 font-bold font-serif text-xl sm:text-2xl md:text-3xl nl:text-4xl lg:text-5xl'> Take Control of Your Finances Today </h1>
+            <i className='text-md sm:text-lg md:text-xl lg:text-2xl'> Track your income and expenses effortlessly and achieve your financial goals. </i>
             <br></br>
             <Link to='/expense'>
-              <Button className='bg-slate-700 mt-10 w-56 h-14 text-lg hover:bg-slate-800 hover:transform hover:scale-105 hover:transition-all'> Get Started For Free  </Button>
+              <Button className='bg-slate-700 mt-5 md:mt-10 w-40 sm:w-44 md:w-56 h-8 sm:h-12 md:h-14 text-sm sm:text-md md:text-lg hover:bg-slate-800 hover:transform hover:scale-105 hover:transition-all'> Get Started For Free  </Button>
             </Link> 
           </div>
 
-          <img src={HomeImage} className='w-2/5 h-96 -mt-4' />
+          <img src={HomeImage} className='w-2/5 h-64 md:h-80 lg:h-96 mt-4 md:-mt-4' />
 
         </div>
 
         {/* ---------------------------------------------------------------------------------------------------------------- */}
 
-        <div className='flex items-center justify-evenly'>
+        <div className='flex items-center justify-evenly flex-wrap'>
           
-          <div className='w-1/4 h-72 border-4 bg-blue-300 hover:border-blue-300 p-7 flex flex-col items-center rounded-lg'>
-            <img src={TrackerIcon} className='bg-white rounded-full p-2 h-20'/>
-            <h2 className='text-xl font-bold mt-4' > Easy Expense Tracking </h2>
-            <i className='mt-3 font-semibold'> Log your expenses in real-time with our intuitive interface. Categorize your spending and always know where your money goes. </i>
+          <div className='w-[70%] sm:w-[40%] nl:w-[31%] lg:w-[27%] xl:w-1/4 sm:h-60 lg:h-64 xl:h-72 border-4 bg-blue-300 hover:border-blue-300 p-3 sm:p-2 xl:p-7 mb-6 flex flex-col items-center justify-evenly rounded-lg'>
+            <img src={TrackerIcon} className='bg-white rounded-full p-1 sm:p-2 h-12 lg:h-16 xl:h-20'/>
+            <h2 className='text-sm sm:text-md nl:text-lg lg:text-xl font-bold mt-2 sm:mt-4' > Easy Expense Tracking </h2>
+            <i className='text-xs md:text-sm mt-3 font-semibold'> Log your expenses in real-time with our intuitive interface. Categorize your spending and always know where your money goes. </i>
           </div>
 
-          <div className='w-1/4 h-72 border-4 bg-green-300 hover:border-green-300 p-7 flex flex-col items-center rounded-lg'>
-            <img src={InsightsIcon} className='bg-white rounded-full p-2 h-20'/>
-            <h2 className='text-xl font-bold mt-4' > Visual Insights </h2>
-            <i className='mt-3 font-semibold'> Understand your spending patterns with clear charts and graphs. See your financial health at a glance. </i>
+          <div className='w-[70%] sm:w-[40%] nl:w-[31%] lg:w-[27%] xl:w-1/4 sm:h-60 lg:h-64 xl:h-72 border-4 bg-green-300 hover:border-green-300 p-4 sm:p-2 xl:p-7 mb-6 flex flex-col items-center justify-evenly rounded-lg'>
+            <img src={InsightsIcon} className='bg-white rounded-full p-1 sm:p-2 h-12 lg:h-16 xl:h-20'/>
+            <h2 className='text-sm sm:text-md nl:text-lg lg:text-xl font-bold mt-2 sm:mt-4' > Visual Insights </h2>
+            <i className='text-xs md:text-sm mt-3 font-semibold'> Understand your spending patterns with clear charts and graphs. See your financial health at a glance. </i>
           </div>
 
-          <div className='w-1/4 h-72 border-4 bg-yellow-300 hover:border-yellow-300 p-7 flex flex-col items-center rounded-lg'>
-            <img src={Security} className='bg-white rounded-full p-2 h-20'/>
-            <h2 className='text-xl font-bold mt-4' > Secure and Private </h2>
-            <i className='mt-3 font-semibold'> Your data is protected with top-notch security measures. Only you have access to your financial information. </i>
+          <div className='w-[70%] sm:w-[40%] nl:w-[31%] lg:w-[27%] xl:w-1/4 sm:h-60 lg:h-64 xl:h-72 border-4 bg-yellow-300 hover:border-yellow-300 p-4 sm:p-2 xl:p-7 flex flex-col items-center justify-evenly rounded-lg'>
+            <img src={Security} className='bg-white rounded-full p-1 sm:p-2 h-12 lg:h-16 xl:h-20'/>
+            <h2 className='text-sm sm:text-md nl:text-xl font-bold mt-2 sm:mt-4' > Secure and Private </h2>
+            <i className='text-xs md:text-sm mt-3 font-semibold'> Your data is protected with top-notch security measures. Only you have access to your financial information. </i>
           </div>
 
         </div>
