@@ -58,6 +58,8 @@ const Overview = () => {
     }
     const userId = user.id;
 
+    const API_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000';
+
     const [currentBalance, setCurrentBalance] = useState(0);
     const [monthlyIncome, setMonthlyIncome] = useState(0);
     const [totalExpenses, setTotalExpenses] = useState(0);
@@ -66,7 +68,7 @@ const Overview = () => {
     useEffect(() => {
         const fetchExpenses = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/expense/${userId}`);
+                const response = await fetch(`${API_URL}/expense/${userId}`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch expenses');
                 }

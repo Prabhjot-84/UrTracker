@@ -36,6 +36,8 @@ const ExpenseDetails = ( { expense, onClose } ) => {
     const [popUp, setPopUp] = useState(false);
     const [errorPopup, setErrorPopup] = useState(false);
 
+    const API_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000';
+
     const handleClick = () => {
         // changing the state to change + to - and - to +
         setIsMinus(isMinus => !isMinus);
@@ -68,7 +70,7 @@ const ExpenseDetails = ( { expense, onClose } ) => {
         };
 
         try {
-            const response = await fetch(`http://localhost:5000/expense/${expense._id}`, {
+            const response = await fetch(`${API_URL}/expense/${expense._id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -109,7 +111,7 @@ const ExpenseDetails = ( { expense, onClose } ) => {
     // DELETE FUNCTION 
     const deleteExpense = async () => {
         try {
-            const response = await fetch(`http://localhost:5000/expense/${expense._id}`, {
+            const response = await fetch(`${API_URL}/expense/${expense._id}`, {
                 method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'

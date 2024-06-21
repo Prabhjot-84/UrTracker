@@ -27,6 +27,8 @@ const ExpenseTable = () => {
 
     const [errorPopup, setErrorPopup] = useState(false);
 
+    const API_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000';
+
     useEffect(() => {
         if (user) {
             const userId = user.id;
@@ -35,7 +37,7 @@ const ExpenseTable = () => {
 
             const fetchExpenses = async () => {
                 try {
-                    const response = await fetch(`http://localhost:5000/expense/${userId}`, {
+                    const response = await fetch(`${API_URL}/expense/${userId}`, {
                         method: 'GET',
                         headers: {
                             'Content-Type': 'application/json',

@@ -28,6 +28,8 @@ const InputExpense = () => {
     const [popUp, setPopUp] = useState(false);
     const [errorPopup, setErrorPopup] = useState(false);
 
+    const API_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000';
+
     const handleClick = () => {
         // changing the state to change + to - and - to +
         setIsMinus(isMinus => !isMinus);
@@ -62,7 +64,7 @@ const InputExpense = () => {
         };
 
         try {
-            const response = await fetch('http://localhost:5000/expense', {
+            const response = await fetch(`${API_URL}/expense`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'

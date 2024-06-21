@@ -6,6 +6,11 @@ import Expense from './components/shared/Expense/Expense'
 import Home from './Home'
 import Dashboard from './components/shared/Analytics/Dashboard'
 
+
+// RUN FRONTEND = npm run dev
+// RUN BACKEND = npm start
+
+
 function App() {
 
   return (
