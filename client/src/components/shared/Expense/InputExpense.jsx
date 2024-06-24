@@ -28,7 +28,7 @@ const InputExpense = () => {
     const [popUp, setPopUp] = useState(false);
     const [errorPopup, setErrorPopup] = useState(false);
 
-    const API_URL = import.meta.env.REACT_APP_API_URL || 'http://localhost:5000';
+    const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
 
     const handleClick = () => {
         // changing the state to change + to - and - to +
