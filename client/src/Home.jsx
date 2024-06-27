@@ -69,7 +69,7 @@ const Home = () => {
           </div>
 
           <div className='w-full nl:w-2/4 lg:2/4 text-left'>
-            <h1 className='text-2xl nl:text-3xl lg:text-4xl font-bold mb-2 text-blue-500'> Analyze Your Spending </h1>
+            <h1 className='text-2xl nl:text-3xl lg:text-4xl font-bold mb-2 text-blue-500'> Easy Expense Tracking </h1>
             {/* <i className='text-xl font-semibold text-green-900' > Use our powerful tools to visualize and understand your financial habits. </i> */}
             <br></br>
             <div className='px-6 py-4 bg-white rounded-3xl hover:drop-shadow-2xl '>
@@ -111,7 +111,7 @@ const Home = () => {
 
         {/* ---------------------------------------------------------------------------------------------------------------- */}
 
-        <div className='flex flex-col sm:flex-row items-center justify-evenly mt-6 sm:mt-12 md:mt-20 text-white'>
+        <div className='flex flex-col sm:flex-row items-center justify-evenly mt-2 sm:mt-12 md:mt-20 text-white'>
           
           <div id='grad' className='w-[80%] sm:w-[30%] xl:w-1/4 sm:h-44 xl:h-52 p-4 xl:p-7 mb-6 sm:mb-0 flex flex-col items-center justify-between rounded-lg'>
             <i className='mt-3 text-left sm:text-center font-semibold text-sm lg:text-[16.5px]'> " This app has completely changed how I manage my money. The insights are invaluable! " </i>
@@ -150,7 +150,7 @@ const Home = () => {
 
         {/* ---------------------------------------------------------------------------------------------------------------- */}
 
-        <div className='mt-20 p-5 sm:p-7 md:p-10 sm:pt-7 text-sm sm:text-base nl:text-lg lg:text-xl xl:text-2xl bg-white'>
+        <div className='mt-6 sm:mt-12 md:mt-20 p-5 sm:p-7 md:p-10 sm:pt-7 text-sm sm:text-base nl:text-lg lg:text-xl xl:text-2xl bg-white'>
           <i> This tool is dedicated to help you manage your finances more effectively. It is not only powerful but also user-friendly and secure. With the right tools, everyone can achieve financial stability and freedom. </i>
         </div>
 
