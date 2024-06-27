@@ -58,19 +58,19 @@ const Dashboard = () => {
   }, [userId]);
 
   return (
-    <div className='max-h-screen w-screen p-12 overflow-y-auto bg-[whitesmoke]'>
+    <div className='md:max-h-screen w-full md:w-screen pt-10 sm:p-8 md:p-12 overflow-y-auto bg-[whitesmoke]'>
       {/* <h1 className='text-left text-xl lg:text-2xl font-semibold lg:font-bold lg:tracking-wide pl-4 mb-5'>Expense Dashboard</h1>
       <hr></hr> */}
       <div className='flex flex-col justify-center lg:justify-between items-center'>
 
-        <div className='mt-5 w-full lg:w-[90%] bg-white rounded-xl pt-7 p-10'>
-          <h1 className='text-left font-semibold text-lg sm:text-xl md:text-2xl mb-4' > Categorized Expenses </h1>
+        <div className='mt-5 w-11/12 lg:w-[90%] bg-white rounded-xl sm:pt-7 pb-4 sm:p-10'>
+          <h1 className='text-left font-semibold text-lg sm:text-xl md:text-2xl pt-4 pl-6 mb-4' > Categorized Expenses </h1>
           <hr></hr>
           <DonutChart data={donutData} />
         </div>
 
-        <div className='mt-10 w-full lg:w-[90%] bg-white rounded-xl pt-7 p-10'>
-          <h1 className='text-left font-semibold text-lg sm:text-xl md:text-2xl mb-4' > Categorized Expenses </h1>
+        <div className='my-5 md:mt-10 w-11/12 lg:w-[90%] bg-white rounded-xl pb-4 sm:pt-7 sm:p-10'>
+          <h1 className='text-left font-semibold text-lg sm:text-xl md:text-2xl pt-4 pl-6 mb-4' > Categorized Expenses </h1>
           <hr></hr>
           <BarChart data={barData} />
         </div> 
